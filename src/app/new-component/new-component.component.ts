@@ -9,5 +9,4 @@ export class NewComponentComponent {
   constructor() {}
   @Input() varEnfant;
   @Output() notify = new EventEmitter();
-
 }

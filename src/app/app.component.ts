@@ -1,5 +1,4 @@
 import { Component, VERSION } from "@angular/core";
-import { YoutubersService } from "./youtubers.service";
 
 @Component({
   selector: "my-app",
@@ -8,12 +7,6 @@ import { YoutubersService } from "./youtubers.service";
 })
 export class AppComponent {
   name = "Ani";
-  youtubersList;
-  like(name) {
-    console.log("like " + name);
-  }
 
-  constructor(public youtubersService: YoutubersService) {
-    this.youtubersList = this.youtubersService.getYoutubers();
-  }
+  constructor() {}
 }

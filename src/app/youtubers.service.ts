@@ -67,4 +67,8 @@ export class YoutubersService {
   getYoutubers() {
     return this.youtubers;
   }
+
+  addChain(chain) {
+    this.youtubers.push(chain);
+  }
 }
